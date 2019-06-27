@@ -16,6 +16,6 @@ export const renderQuestion = (questions) => {
     return markup;
   }).join('');
 
-  // elements.questionContainer.insertAdjacentHTML('beforeend', markup);
+  elements.questionContainer.innerHTML = '';
   elements.questionContainer.insertAdjacentHTML('beforeend', questionMarkup);
 };
